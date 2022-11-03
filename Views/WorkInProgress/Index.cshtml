@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="alert alert-info">Lamentamos el infortunio, pero esta secci&oacute;n se encuentra en mantenimiento, lo tendremos listo en la brevedad. Mientras tanto, puedes ver a este perrito enojado o gatito triste.</h1>
+@{ 
+    int x = new Random().Next(1, 7);
+    string imagen = x.ToString() + ".jpg";
+    <img src="~/IMG/WorkInProgress/@imagen" class="img-fluid"/>
+}
+

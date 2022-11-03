@@ -1,0 +1,96 @@
+﻿@model IEnumerable<ComponentesMexica.Data.Models.Reporte>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Reportes</h1>
+
+<table class="table-responsive">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Orderid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.userid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Evidencia1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Evidencia2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Evidencia3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserMail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Report)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReporteData)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Referencia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sellerid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReferenciaPago)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Orderid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.userid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Evidencia1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Evidencia2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Evidencia3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserMail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Report)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReporteData)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Referencia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sellerid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReferenciaPago)
+            </td>
+            <td>
+                
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

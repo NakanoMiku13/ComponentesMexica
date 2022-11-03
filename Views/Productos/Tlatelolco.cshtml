@@ -1,0 +1,388 @@
+﻿
+@{
+    ViewData["Title"] = "Tlatelolco";
+}
+<style>
+    .bg {
+        height: 150px;
+    }
+</style>
+<h1>Mercado de Tlatelolco</h1>
+<h2 class="alert alert-warning">Por el momento el servicio de paqueter&iacute;a a otros estados no est&aacute; trabajando con plenitud y puede ocasionar demoras en las entregas, en caso de que seas de la Ciudad de M&eacute;xico podr&aacute;s realizar tu pedido sin mayor problema. Lamentamos el inconveniente, estamos trabajando para ti y para ofrecerte el mejor servicio.</h2>
+@if (ViewBag.Cat == null)
+{
+<div class="row">
+    <a asp-action="Tlatelolco" asp-route-Category="HDD" class="col-lg-3 col-md-4 col-sm-6 btn">
+        <div class="card">
+            <img src="~/IMG/Banner/m2.png" class="card-img bg" />
+            <div class="card-img-overlay">
+                <div class="card-body">
+                    <h2 class="text-white">Almacenamiento</h2>
+                </div>
+            </div>
+
+        </div>
+    </a>
+    <a asp-action="Tlatelolco" asp-route-Category="Case" class="col-lg-3 col-md-4 col-sm-6 btn">
+        <div class="card">
+            <img src="~/IMG/Banner/case1.jpg" class="card-img bg" />
+            <div class="card-img-overlay">
+                <div class="card-body text-center">
+                    <h2 class="text-white">Gabinetes</h2>
+                </div>
+            </div>
+
+        </div>
+    </a>
+    <a asp-action="Tlatelolco" asp-route-Category="CPU" class="col-lg-3 col-md-4 col-sm-6 btn">
+        <div class="card">
+            <img src="~/IMG/Banner/cpu1.jpg" class="card-img bg" />
+            <div class="card-img-overlay">
+                <div class="card-body text-center">
+                    <h2 class="text-white">Procesadores</h2>
+                </div>
+            </div>
+
+        </div>
+    </a>
+    <a asp-action="Tlatelolco" asp-route-Category="GPU" class="col-lg-3 col-md-4 col-sm-6 btn">
+        <div class="card">
+            <img src="~/IMG/Banner/gpu1.jpg" class="card-img bg" />
+            <div class="card-img-overlay">
+                <div class="card-body text-center">
+                    <h2 class="text-white">Tarjetas de Video</h2>
+                </div>
+            </div>
+
+        </div>
+    </a>
+    <a asp-action="Tlatelolco" asp-route-Category="PSU" class="col-lg-3 col-md-4 col-sm-6 btn">
+        <div class="card">
+            <img src="~/IMG/Banner/psu1.jpg" class="card-img bg" />
+            <div class="card-img-overlay">
+                <div class="card-body text-center">
+                    <h2 class="text-white">Fuentes de Poder</h2>
+                </div>
+            </div>
+
+        </div>
+    </a>
+    <a asp-action="Tlatelolco" asp-route-Category="RAM" class="col-lg-3 col-md-4 col-sm-6 btn">
+        <div class="card">
+            <img src="~/IMG/Banner/Ram1.jpg" class="card-img bg" />
+            <div class="card-img-overlay">
+                <div class="card-body text-center">
+                    <h2 class="text-white">Memorias RAM</h2>
+                </div>
+            </div>
+
+        </div>
+    </a>
+    <a asp-action="Tlatelolco" asp-route-Category="Mobo" class="col-lg-3 col-md-4 col-sm-6 btn">
+        <div class="card">
+            <img src="~/IMG/Banner/mobo1.jpg" class="card-img bg" />
+            <div class="card-img-overlay">
+                <div class="card-body text-center">
+                    <h2 class="text-white">Placas madre</h2>
+                </div>
+            </div>
+        </div>
+    </a>
+    <a asp-action="Create" asp-controller="Vendedors" class="col-lg-3 col-md-4 col-sm-6 btn">
+        <div class="card">
+            <img src="~/IMG/GeForce-RTX-2080-Ti-Founders-Edition.jpg" class="card-img bg" />
+            <div class="card-img-overlay">
+                <div class="card-body text-center">
+                    <h2 class="text-white">Quiero vender</h2>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+}
+<div class="row">
+    @if (ViewBag.Cat != null)
+    {
+        if (ViewBag.Cat == "HDD")
+        {
+
+            <a asp-action="Tlatelolco" asp-route-Formato="3.5" asp-route-category="@ViewBag.Cat" class="col-lg-3 col-md-4 col-sm-6 btn">
+                <div class="card">
+                    <img src="~/IMG/Banner/hdd1.jpg" class="card-img bg" />
+                    <div class="card-img-overlay">
+                        <div class="card-body text-center">
+                            <h2 class="text-white">3.5"</h2>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a asp-action="Tlatelolco" asp-route-Formato="2.5" asp-route-category="@ViewBag.Cat" class="col-lg-3 col-md-4 col-sm-6 btn">
+                <div class="card">
+                    <img src="~/IMG/Banner/ssd.jpg" class="card-img bg" />
+                    <div class="card-img-overlay">
+                        <div class="card-body text-center">
+                            <h2 class="text-white">2.5"</h2>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a asp-action="Tlatelolco" asp-route-Formato="M.2" asp-route-category="@ViewBag.Cat" class="col-lg-3 col-md-4 col-sm-6 btn">
+                <div class="card">
+                    <img src="~/IMG/Banner/m2.png" class="card-img bg" />
+                    <div class="card-img-overlay">
+                        <div class="card-body text-center">
+                            <h2 class="text-white">M.2</h2>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a asp-action="Tlatelolco" class="col-lg-3 col-md-4 col-sm-6 btn">
+                <div class="card">
+                    <img src="~/IMG/LogoSinTexto.png" class="card-img bg" />
+                    <div class="card-img-overlay">
+                        <div class="card-body text-center">
+                            <h2 class="text-white">Ver todas</h2>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        }
+        else if (ViewBag.Cat == "Mobo")
+        {
+            <a asp-action="Tlatelolco" asp-route-Formato="ATX" asp-route-category="@ViewBag.Cat" class="col-lg-3 col-md-4 col-sm-6 btn">
+                <div class="card">
+                    <img src="~/IMG/Banner/atx.jpg" class="card-img bg" />
+                    <div class="card-img-overlay">
+                        <div class="card-body text-center">
+                            <h2 class="text-white">ATX</h2>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a asp-action="Tlatelolco" asp-route-Formato="MicroATX" asp-route-category="@ViewBag.Cat" class="col-lg-3 col-md-4 col-sm-6 btn">
+                <div class="card">
+                    <img src="~/IMG/Banner/micro.jpg" class="card-img bg" />
+                    <div class="card-img-overlay">
+                        <div class="card-body text-center">
+                            <h2 class="text-white">Micro ATX</h2>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a asp-action="Tlatelolco" asp-route-Formato="MiniITX" asp-route-category="@ViewBag.Cat" class="col-lg-3 col-md-4 col-sm-6 btn">
+                <div class="card">
+                    <img src="~/IMG/Banner/miniç.jpg" class="card-img bg" />
+                    <div class="card-img-overlay">
+                        <div class="card-body text-center">
+                            <h2 class="text-white">Mini ITX</h2>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a asp-action="Tlatelolco" class="col-lg-3 col-md-4 col-sm-6 btn">
+                <div class="card">
+                    <img src="~/IMG/LogoSinTexto.png" class="card-img bg" />
+                    <div class="card-img-overlay">
+                        <div class="card-body text-center">
+                            <h2 class="text-white">Ver todas</h2>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        }
+        else if (ViewBag.Cat == "Case")
+        {
+            <a asp-action="Tlatelolco" asp-route-Formato="ATX" asp-route-category="@ViewBag.Cat" class="col-lg-3 col-md-4 col-sm-6 btn">
+                <div class="card">
+                    <img src="~/IMG/Banner/case1.jpg" class="card-img bg" />
+                    <div class="card-img-overlay">
+                        <div class="card-body text-center">
+                            <h2 class="text-white">ATX</h2>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a asp-action="Tlatelolco" asp-route-Formato="MicroATX" asp-route-category="@ViewBag.Cat" class="col-lg-3 col-md-4 col-sm-6 btn">
+                <div class="card">
+                    <img src="~/IMG/Banner/microCase.jpg" class="card-img bg" />
+                    <div class="card-img-overlay">
+                        <div class="card-body text-center">
+                            <h2 class="text-white">Micro ATX</h2>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a asp-action="Tlatelolco" asp-route-Formato="MiniITX" asp-route-category="@ViewBag.Cat" class="col-lg-3 col-md-4 col-sm-6 btn">
+                <div class="card">
+                    <img src="~/IMG/Banner/miniCase.jpg" class="card-img bg" />
+                    <div class="card-img-overlay">
+                        <div class="card-body text-center">
+                            <h2 class="text-white">Mini ITX</h2>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a asp-action="Tlatelolco" class="col-lg-3 col-md-4 col-sm-6 btn">
+                <div class="card">
+                    <img src="~/IMG/LogoSinTexto.png" class="card-img bg" />
+                    <div class="card-img-overlay">
+                        <div class="card-body text-center">
+                            <h2 class="text-white">Ver todas</h2>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        }
+        else
+        {
+            <a asp-action="Tlatelolco" class="col-lg-3 col-md-4 col-sm-6 btn">
+                <div class="card">
+                    <img src="~/IMG/LogoSinTexto.png" class="card-img bg" />
+                    <div class="card-img-overlay">
+                        <div class="card-body text-center">
+                            <h2 class="text-white">Ver todas</h2>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        }
+    }
+</div>
+<div class="row">
+    @if (ViewBag.Pieza == null)
+    {
+        <h2 class="alert alert-warning">No hay componentes de esta categoria disponibles</h2>
+    }
+    else
+    {
+        foreach (var item in ViewBag.Pieza)
+        {
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="card" style="width: 18rem;">
+                    <img src="~/UploadImages/@item.Imagen" class="card-img-top" alt="@item.Modelo">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Modelo</h5>
+                        @if (item.Active == false)
+                        {
+                            <p class="text-danger">
+                                Producto no disponible
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </p>
+                        }
+                        else if (item.Revision == true)
+                        {
+                            <p class="text-warning">
+                                Producto en revisi&oacute;n <svg width="1.0625em" height="1em" viewBox="0 0 17 16" class="bi bi-exclamation-triangle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M7.938 2.016a.146.146 0 0 0-.054.057L1.027 13.74a.176.176 0 0 0-.002.183c.016.03.037.05.054.06.015.01.034.017.066.017h13.713a.12.12 0 0 0 .066-.017.163.163 0 0 0 .055-.06.176.176 0 0 0-.003-.183L8.12 2.073a.146.146 0 0 0-.054-.057A.13.13 0 0 0 8.002 2a.13.13 0 0 0-.064.016zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z" />
+                                    <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z" />
+                                </svg>
+                            </p>
+                        }
+                        <p class="card-text">@item.Marca | @item.Modelo </p>
+                        @if (item.Formato != "NoValid" || item.Formato != null)
+                        {
+                            <p class="card-text">Formato: @item.Formato</p>
+                            @if (item.Capacidad != 0 && item.Wattage == 0)
+                            {
+                                <p class="card-text">Capacidad: @item.Capacidad GB</p>
+                            }
+                            @if (item.Wattage != 0 && item.Capacidad == 0)
+                            {
+                                <p class="card-text">Wattage: @item.Wattage W</p>
+                            }
+                        }
+
+                        @if (item.Socket != "0")
+                        {
+                            <p class="card-text">Socket: @item.Socket</p>
+                        }
+                        <p class="card-text alert alert-success">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cash-stack" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 3H1a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1h-1z" />
+                                <path fill-rule="evenodd" d="M15 5H1v8h14V5zM1 4a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H1z" />
+                                <path d="M13 5a2 2 0 0 0 2 2V5h-2zM3 5a2 2 0 0 1-2 2V5h2zm10 8a2 2 0 0 1 2-2v2h-2zM3 13a2 2 0 0 0-2-2v2h2zm7-4a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
+                            </svg> @item.PrecioVenta
+                        </p>
+                        <p class="card-text">@item.Descripcion</p>
+                        <p class="card-text">
+                            <div class="btn-group">
+                                <a class="btn btn-outline-danger" asp-action="AddComent" asp-route-Id="@item.id">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                    </svg>
+                                </a>
+                                <a class="btn btn-outline-warning" asp-action="Report" asp-controller="Error">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bug" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4.355.522a.5.5 0 0 1 .623.333l.291.956A4.979 4.979 0 0 1 8 1c1.007 0 1.946.298 2.731.811l.29-.956a.5.5 0 1 1 .957.29l-.41 1.352A4.985 4.985 0 0 1 13 6h.5a.5.5 0 0 0 .5-.5V5a.5.5 0 0 1 1 0v.5A1.5 1.5 0 0 1 13.5 7H13v1h1.5a.5.5 0 0 1 0 1H13v1h.5a1.5 1.5 0 0 1 1.5 1.5v.5a.5.5 0 1 1-1 0v-.5a.5.5 0 0 0-.5-.5H13a5 5 0 0 1-10 0h-.5a.5.5 0 0 0-.5.5v.5a.5.5 0 1 1-1 0v-.5A1.5 1.5 0 0 1 2.5 10H3V9H1.5a.5.5 0 0 1 0-1H3V7h-.5A1.5 1.5 0 0 1 1 5.5V5a.5.5 0 0 1 1 0v.5a.5.5 0 0 0 .5.5H3c0-1.364.547-2.601 1.432-3.503l-.41-1.352a.5.5 0 0 1 .333-.623zM4 7v4a4 4 0 0 0 3.5 3.97V7H4zm4.5 0v7.97A4 4 0 0 0 12 11V7H8.5zM12 6H4a3.99 3.99 0 0 1 1.333-2.982A3.983 3.983 0 0 1 8 2c1.025 0 1.959.385 2.666 1.018A3.989 3.989 0 0 1 12 6z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </p>
+                        <p class="card-text text-info">
+                            @item.Calificacion recomendaciones
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill text-danger" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg>
+                        </p>
+                        @if (item.Active == false)
+                        {
+                            <a class="btn btn-outline-danger" href="#">No disponible</a>
+                        }
+                        else if (item.Revision == true)
+                        {
+                            <a class="btn btn-outline-success" href="#myModal" data-toggle="modal">
+                                Comprar <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-emoji-laughing" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path fill-rule="evenodd" d="M12.331 9.5a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5z" />
+                                    <path d="M7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5z" />
+                                </svg>
+                            </a>
+                            <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <div>
+                                                <button type="button" class="btn btn-outline-danger close" data-dismiss="modal" aria-hidden="true">x</button>
+                                            </div>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div id="modal-content">
+                                                Este producto al estar sometido a revisi&oacute;n as&iacute; que puede que se le hagan cambios, en caso de que se haga un cambio de precio y hayas adquirido este producto, se te har&aacute; una devoluci&oacute;n integra de tu dinero, as&Iacute; mismo aplica si el producto deja de estar disponible.<br />
+                                                Para m&aacute;s informaci&oacute;n visita el apartado de dudas y preguntas.
+                                                ¿Deseas continuar?<br />
+                                                <div class="btn-group">
+                                                    <a class="btn btn-outline-success" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@item.id" asp-route-category="componente">
+                                                        Comprar
+                                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-emoji-laughing" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            <path fill-rule="evenodd" d="M12.331 9.5a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5z" />
+                                                            <path d="M7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5z" />
+                                                        </svg>
+                                                    </a>
+                                                    <a asp-action="Tlatelolco" class="btn btn-outline-danger">Cancelar</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <a class="btn btn-outline-success" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@item.id" asp-route-category="componente">
+                                Comprar
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-emoji-laughing" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path fill-rule="evenodd" d="M12.331 9.5a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5z" />
+                                    <path d="M7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5z" />
+                                </svg>
+                            </a>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>

@@ -1,0 +1,66 @@
+﻿@model ReporteViewModel
+@{
+    ViewData["Title"] = "Reportar";
+}
+
+<h1>Reportar</h1>
+<div class="row">
+    <form asp-action="Reportar" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label>Reporte</label>
+            <textarea asp-for="ReporteData" required class="form-control" placeholder="Producto a reportar: @ViewBag.Producto.id con a nombre de @ViewBag.Vendedor.Nombre (Vendedor)...
+                Anexe su testimonio.">
+            </textarea>
+        </div>
+        <div class="form-group">
+            <label>Referencia de pago</label>
+            <input asp-for="ReferenciaPago" required class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Evidencias</label>
+            <p>M&iacute;nimo 1 evidencia, 3 recomendadas</p>
+            <input asp-for="Evidencia1" required class="form-control-file" />
+            <input asp-for="Evidencia2" class="form-control-file" />
+            <input asp-for="Evidencia3" class="form-control-file" />
+        </div>
+        <div class="form-group">
+            <label>ID del vendedor</label>
+            <input asp-for="Sellerid" required class="form-control" readonly value="@ViewBag.Vendedor.id"/>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-outline-danger">
+                Reportar
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-emoji-frown" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                    <path fill-rule="evenodd" d="M4.285 12.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 10.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 9.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683z" />
+                    <path d="M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z" />
+                </svg>
+            </button>
+        </div>
+    </form>
+</div>
+<div class="row">
+    <div class="alert-danger col-lg-6 col-md-6 col-sm-12">
+        <h4>Estas a punto de reportar a un vendedor, ten en cuenta que el reportar es porque ha incumplido con los acuerdos de Componentes Mexica </h4>
+        <h4>los cuales puedes encontrar <a asp-action="Privacy" asp-controller="Productos">aqu&iacute;</a>.</h4>
+        <h4>Si estas seguro de que incumple con una de nuestras normativas de venta de componentes de segunda mano, te pedimos que llenes los datos del siguiente</h4>
+        <h4>formulario para generar una carpeta de investigaci&oacute;n, as&iacute; como una descripci&oacute;n detallada de la situaci&oacute;n para poder ayudarte.</h4>
+        <h4>Nuestra prioridad eres t&uacute;, en caso de que esta denuncia sea aceptada a tu favor se te har&aacute; llegar una notificaci&oacute;n a tu correo, con los datos de la misma;</h4>
+        <h4>As&iacute; mismo se aplicar&aacute; una sanci&oacute;n al vendedor.</h4>
+    </div>
+    <div class="alert alert-warning col-lg-6 col-md-6 col-sm-12">
+        <h4>En caso de haber realizado la compra de un producto del Mictl&aacute;n y el mismo te haya llegado en mal estado, tendr&aacute;s que presentar el video que se solicita a todos los compradores</h4>
+        <h4>donde se pueda apreciar con claridad desde que recibes el paquete sellado hasta que se hace la apertura del mismo; con este podremos ayudarte a procesar mejor tu denuncia.</h4>
+        <h4>En caso de no contar con dicho video no se podr&aacute; continuar con la denuncia ya que tu como comprador y al aceptar los Terminos y condiciones de compra, ten&iacute;s la obligaci&oacute;n de grabar desde la llegada del producto, hasta su apertura.</h4>
+        <h5>A lo que se aplicar&aacute; una sanci&oacute;n a tu cuenta por no cumplir con los terminos y condiciones de compra.</h5>
+        <h4>En caso de haber realizado la compra y cumplir los requerimientos; que estos implican como antes fue mencionado, al menos un video que demuestre la entrega integra del producto por parte del servicio de mensajeria.</h4>
+        <h4>Una vez mencionado, en el caso de que tu producto haya llegado dañado o defectuoso, la garant&iacute;a es directa con el vendedor; si en el caso te haya ofrecido una garant&iacute;a y no la cumpla, nosotros solamente podremos apoyarte sansionando al vendedor.</h4>
+        <h4>Para m&aacute;s informaci&oacute;n visita el <a asp-action="Privacy" asp-controller="Productos">aviso de vendedores y compradores del Mictl&aacute;n</a></h4>
+        <h4>En caso de que el producto haya sido enviado con daño previo o no cumpla con las especificaciones dadas por el vendedor, se te har&aacute; una devoluci&oacute;n integra de dinero (Esta puede variar, dependiendo tu metodo de pago), as&iacute; c&oacute;mo una sansi&oacute;n al vendedor.</h4>
+        <h4>En caso de ser dañado por paqueter&iacute; se presentar&aacute; una queja directamente a la empresa encargada de entregarte el producto.(Anexar evidencia de daño)</h4>
+        <h4>En caso de que el producto no haya llegado y el vendedor haya falsificado el codigo de envio (Estafeta, UPS, entre otros) se eliminar&aacute; directamente al vendedor y dependiendo el monto se aplicar&aacute; una denuncia ante ministerio p&uacute;blico por estafa y se te har&aacute; una devoluci&oacute;n integra de tu dinero (Esta puede variar, dependiendo tu metodo de pago).</h4>
+    </div>
+</div>
+
+
+

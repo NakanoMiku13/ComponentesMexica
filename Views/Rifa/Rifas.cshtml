@@ -1,0 +1,76 @@
+﻿@model IEnumerable<ComponentesMexica.Data.Models.Rifas>
+
+@{
+    ViewData["Title"] = "Rifas";
+}
+
+<h1>Rifas</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Numero)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Componente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GanadorUserid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rifado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tickets)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Acumulado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumeroWin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Active)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CostoTicket)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Numero)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Componente.id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GanadorUserid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rifado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tickets)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Acumulado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumeroWin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Active)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CostoTicket)
+            </td>
+            <td>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

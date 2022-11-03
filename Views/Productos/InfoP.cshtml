@@ -1,0 +1,58 @@
+﻿@model SHSViewModel
+@{
+    ViewData["Title"] = "InfoP";
+}
+
+<h1>Informaci&oacute;n del producto y Vendedor</h1>
+<div class="text-center">
+    <div class="alert alert-info">
+        <h2>Informaci&oacute;n del vendedor</h2>
+        <hr />
+        <h3>Vendido por: @Model.Vd.Nombre @Model.Vd.Apellidos</h3>
+        <h5>
+            Reputaci&oacute;n: @Model.Vd.Calificacion
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-suit-heart-fill text-danger" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
+            </svg>
+            @if (Model.Vd.Calificacion > 10000)
+            {
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-reception-4 text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-11z" />
+                </svg> }
+            else if (Model.Vd.Calificacion > 5000 && Model.Vd.Calificacion <= 10000)
+            {<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-reception-3 text-primary" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4 8a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z" />
+                </svg>}
+            else if (Model.Vd.Calificacion > 2500 && Model.Vd.Calificacion <= 5000)
+            {<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-reception-2 text-secondary" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4 5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm4 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z" />
+                </svg>}
+            else if (Model.Vd.Calificacion > 1000 && Model.Vd.Calificacion <= 2500)
+            {<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-reception-1 text-warning" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm4 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm4 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z" />
+                </svg>}
+            else
+            {<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-reception-0 text-danger" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 13.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm4 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm4 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm4 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z" />
+                </svg>}
+        </h5>
+        <h5>Inicio: @Model.Vd.Registro</h5>
+    </div>
+    <div class="alert alert-secondary ">
+        <h2>Informaci&oacute;n del producto</h2>
+        <hr />
+        <h5>Descripci&oacute;n: @Model.sh.Descripcion</h5>
+        <h5>Marca: @Model.sh.Marca</h5>
+        <h5>Modelo: @Model.sh.Modelo</h5>
+        <h5 class="text-success">$@Model.sh.PrecioVenta</h5>
+        <h5>@Model.sh.Calificacion
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill text-danger" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+            </svg>
+        </h5>
+        <h5>Publicado el: @Model.sh.Posted</h5>
+    </div>
+
+
+</div>
+

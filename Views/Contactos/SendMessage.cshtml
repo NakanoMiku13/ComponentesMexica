@@ -1,0 +1,11 @@
+﻿@model Contacto
+<h1>Contacta con nostoros</h1>
+<div>
+    <form asp-action="SendMessage">
+        <div class="form-group">
+            <label>Escribe tu mensaje</label>
+            <textarea asp-for="Message" required class="form-control" style="height:150px;"></textarea>
+        </div>
+        <input type="submit" class="btn btn-success" value="Enviar" />
+    </form>
+</div>

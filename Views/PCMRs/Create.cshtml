@@ -1,0 +1,144 @@
+﻿@model ComponentesMexica.Data.ViewModels.PCMRViewModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>PCMR</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Nombre" class="control-label"></label>
+                <input asp-for="Nombre" class="form-control" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Descripcion" class="control-label"></label>
+                <input asp-for="Descripcion" class="form-control" />
+                <span asp-validation-for="Descripcion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CPU"></label>
+                <select asp-for="CPU" class="form-control" asp-items="ViewBag.CPU" required>
+                    <option disabled selected>--Selecciona uno--</option>
+                    <option value="No aplica">No aplica</option>
+                </select>
+                <span asp-validation-for="CPU" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Mobo"></label>
+                <select asp-for="Mobo" class="form-control" asp-items="ViewBag.Mobo" required>
+                    <option disabled selected>--Selecciona uno--</option>
+                    <option value="No aplica">No aplica</option>
+                </select>
+                <span asp-validation-for="Mobo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RAM"></label>
+                <select asp-for="RAM" class="form-control" asp-items="ViewBag.RAM" required>
+                    <option disabled selected>--Selecciona uno--</option>
+                    <option value="No aplica">No aplica</option>
+                </select>
+                <span asp-validation-for="RAM" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RAM"></label>
+                <select asp-for="RAM1" class="form-control" asp-items="ViewBag.RAM" required>
+                    <option disabled selected>--Selecciona uno--</option>
+                    <option value="No aplica">No aplica</option>
+                </select>
+                <span asp-validation-for="RAM1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RAM"></label>
+                <select asp-for="RAM2" class="form-control" asp-items="ViewBag.RAM" required>
+                    <option disabled selected>--Selecciona uno--</option>
+                    <option value="No aplica">No aplica</option>
+                </select>
+                <span asp-validation-for="RAM2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RAM"></label>
+                <select asp-for="RAM3" class="form-control" asp-items="ViewBag.RAM" required>
+                    <option disabled selected>--Selecciona uno--</option>
+                    <option value="No aplica">No aplica</option>
+                </select>
+                <span asp-validation-for="RAM3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label>PSU</label>
+                <select asp-for="PCU" class="form-control" asp-items="ViewBag.PSU" required>
+                    <option disabled selected>--Selecciona uno--</option>
+                    <option value="No aplica">No aplica</option>
+                </select>
+                <span asp-validation-for="PCU" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cooler"></label>
+                <select asp-for="Cooler" class="form-control" asp-items="ViewBag.Cooler" required>
+                    <option disabled selected>--Selecciona uno--</option>
+                    <option value="No aplica">No aplica</option>
+                </select>
+                <span asp-validation-for="Cooler" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Case"></label>
+                <select asp-for="Case" class="form-control" asp-items="ViewBag.Case" required>
+                    <option disabled selected>--Selecciona uno--</option>
+                    <option value="No aplica">No aplica</option>
+                </select>
+                <span asp-validation-for="Case" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label>SSD M.2</label>
+                <select asp-for="SSDM2" class="form-control" asp-items="ViewBag.HDD" required>
+                    <option disabled selected>--Selecciona uno--</option>
+                    <option value="No aplica">No aplica</option>
+                </select>
+                <span asp-validation-for="SSDM2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Almacenamiento"></label>
+                <select asp-for="Almacenamiento" class="form-control" asp-items="ViewBag.HDD" required>
+                    <option disabled selected>--Selecciona uno--</option>
+                    <option value="No aplica">No aplica</option>
+                </select>
+                <span asp-validation-for="Almacenamiento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AlmacenamientoSecu"></label>
+                <select asp-for="AlmacenamientoSecu" class="form-control" asp-items="ViewBag.HDD" required>
+                    <option disabled selected>--Selecciona uno--</option>
+                    <option value="No aplica">No aplica</option>
+                </select>
+                <span asp-validation-for="AlmacenamientoSecu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GPU"></label>
+                <select asp-for="GPU" class="form-control" asp-items="ViewBag.GPU" required>
+                    <option disabled selected>--Selecciona uno--</option>
+                    <option value="No aplica">No aplica</option>
+                </select>
+                <span asp-validation-for="GPU" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Imagen" class="control-label"></label>
+                <input asp-for="Imagen" class="form-control" />
+                <span asp-validation-for="Imagen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

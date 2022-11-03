@@ -1,0 +1,151 @@
+﻿@model Vendedor
+@{
+    ViewData["Title"] = "Index";
+}
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div id="modal-content">
+                    Consulta aqu&iacute; tus datos:
+                    <ul>
+                        <li typeof="sqare">id: @Model.id</li>
+                        <li typeof="sqare">Nombre: @Model.Nombre</li>
+                        <li typeof="sqare">Apellidos: @Model.Apellidos</li>
+                        <li typeof="sqare">Estado: @if (Model.Active)
+                        { <p class="text-success">Activo <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-emoji-laughing" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+    <path fill-rule="evenodd" d="M12.331 9.5a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5z" />
+    <path d="M7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5z" />
+</svg></p>}
+                        else { <p class="text-danger">Inactivo <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-emoji-frown" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+    <path fill-rule="evenodd" d="M4.285 12.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 10.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 9.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683z" />
+    <path d="M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z" />
+</svg></p>}</li>
+                        <li typeof="sqare">Calificaci&oacute;n: @Model.Calificacion <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-suit-heart-fill text-danger" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
+</svg>
+                        @if (Model.Calificacion > 10000) {
+    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-reception-4 text-success" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-11z" />
+    </svg> } else if (Model.Calificacion > 5000 && Model.Calificacion <= 10000) {<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-reception-3 text-primary" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4 8a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z" />
+</svg>} else if (Model.Calificacion > 2500 && Model.Calificacion <= 5000) {<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-reception-2 text-secondary" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4 5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm4 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z" />
+</svg>} else if (Model.Calificacion > 1000 && Model.Calificacion <= 2500) {<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-reception-1 text-warning" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm4 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm4 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z" />
+</svg>} else {<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-reception-0 text-danger" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 13.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm4 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm4 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm4 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z" />
+</svg>}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@if (ViewBag.Nomina != null)
+{
+    <div id="myModal2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div id="modal-content">
+                        Tienes unas ganancias totales de <span class="text-success">$@ViewBag.Nomina.Total</span>.
+                        En caso de ser un monto mayor a <span class="text-success">$3000</span> el deposito puede ser en 48 horas o menos, en caso contrario podr&aacute; tardar un poco m&aacute;s.
+                        Si deseas retirarlo da click en el boton "Retirar" y podr&aacute;s realizar el proceso de retiro de dinero.
+                        <h4 class="font-weight-bold">Referencia de retiro: </h4>
+                        <p>@ViewBag.Nomina.Referencia</p>
+                        <h5 class="font-weight-bold">Recomendaciones para retirar</h5>
+                        <ul typeof="square">
+                            <li>Usa una cuenta de Paypal o Mercado Pago para poder realizar un deposito m&aacute;s efectivo.</li>
+                            <li>En caso de solicitar en cuenta bancaria, puede tardar un poco m&aacute;s tu solicitud.</li>
+                            <li>En caso de ser por CLABE el deposito tardar&aacute; dependiendo la cantidad y el banco a depositar.</li>
+                        </ul>
+                        <a class="btn btn-outline-success" asp-action="Retire" asp-route-Sellerid="@Model.id" asp-route-RefPago="@ViewBag.Nomina.Referencia">
+                            Retirar
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-emoji-laughing" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path fill-rule="evenodd" d="M12.331 9.5a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5z" />
+                                <path d="M7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+<div>
+    <div class="btn-group">
+        <a href="#myModal" class="btn btn-outline-info" data-toggle="modal">
+            Mi informaci&oacute;n
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-toggles" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M4.5 9a3.5 3.5 0 1 0 0 7h7a3.5 3.5 0 1 0 0-7h-7zm7 6a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm-7-14a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm2.45 0A3.49 3.49 0 0 1 8 3.5 3.49 3.49 0 0 1 6.95 6h4.55a2.5 2.5 0 0 0 0-5H6.95zM4.5 0h7a3.5 3.5 0 1 1 0 7h-7a3.5 3.5 0 1 1 0-7z" />
+            </svg>
+        </a>
+        <a class="btn btn-outline-success" data-toggle="modal" href="#myModal2">
+            Mis ganancias:
+            <span>
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cash-stack" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 3H1a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1h-1z" />
+                    <path fill-rule="evenodd" d="M15 5H1v8h14V5zM1 4a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H1z" />
+                    <path d="M13 5a2 2 0 0 0 2 2V5h-2zM3 5a2 2 0 0 1-2 2V5h2zm10 8a2 2 0 0 1 2-2v2h-2zM3 13a2 2 0 0 0-2-2v2h2zm7-4a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
+                </svg>
+                @if (ViewBag.Nomina != null)
+                {
+                    @ViewBag.Nomina.Total
+                }
+                else
+                {
+                    <span>0.0</span>
+                }
+
+            </span>
+        </a>
+    </div>
+    <div class="card">
+        <h5 class="card-header">Mis productos</h5>
+        <div class="card-body">
+            <h5 class="card-title">Apartado para ver tus productos</h5>
+            <p class="card-text">En este apartado podr&aacute;s ver tus productos publicados y en este apartado podrás desde pausar la publicaci&oacute;n, hasta modificarla o crear una nueva.</p>
+            <a asp-action="Index" asp-controller="SecondHands" class="btn btn-primary">Ver</a>
+        </div>
+    </div>
+    <div class="card">
+        <h5 class="card-header">Featured</h5>
+        <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    <div class="card">
+        <h5 class="card-header">Featured</h5>
+        <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    <div class="card">
+        <h5 class="card-header">Featured</h5>
+        <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+</div>
+
+

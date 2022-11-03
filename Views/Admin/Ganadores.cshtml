@@ -1,0 +1,43 @@
+﻿@model IEnumerable<ComponentesMexica.Data.Models.GanadorRifa>
+
+@{
+    ViewData["Title"] = "Ganadores";
+}
+
+<h1>Ganadores</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.userid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rifaid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CantidadTickets)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumeroWin)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.userid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rifaid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CantidadTickets)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumeroWin)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

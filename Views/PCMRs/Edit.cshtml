@@ -1,0 +1,81 @@
+﻿@model ComponentesMexica.Data.Models.PCMR
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>PCMR</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="id" />
+            <div class="form-group">
+                <label asp-for="Nombre" class="control-label"></label>
+                <input asp-for="Nombre" class="form-control" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Descripcion" class="control-label"></label>
+                <input asp-for="Descripcion" class="form-control" />
+                <span asp-validation-for="Descripcion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CPU" class="control-label"></label>
+                <input asp-for="CPU" class="form-control" />
+                <span asp-validation-for="CPU" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Mobo" class="control-label"></label>
+                <input asp-for="Mobo" class="form-control" />
+                <span asp-validation-for="Mobo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GPU" class="control-label"></label>
+                <input asp-for="GPU" class="form-control" />
+                <span asp-validation-for="GPU" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PCU" class="control-label"></label>
+                <input asp-for="PCU" class="form-control" />
+                <span asp-validation-for="PCU" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RAM" class="control-label"></label>
+                <input asp-for="RAM" class="form-control" />
+                <span asp-validation-for="RAM" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Almacenamiento" class="control-label"></label>
+                <input asp-for="Almacenamiento" class="form-control" />
+                <span asp-validation-for="Almacenamiento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AlmacenamientoSecu" class="control-label"></label>
+                <input asp-for="AlmacenamientoSecu" class="form-control" />
+                <span asp-validation-for="AlmacenamientoSecu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Case" class="control-label"></label>
+                <input asp-for="Case" class="form-control" />
+                <span asp-validation-for="Case" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Active" /> @Html.DisplayNameFor(model => model.Active)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

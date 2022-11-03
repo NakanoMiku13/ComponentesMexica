@@ -1,0 +1,14 @@
+﻿@model ErrorReporter
+@{
+    ViewData["Title"] = "Report";
+}
+<h1>Reporta un error</h1>
+<div>
+    <form asp-action="Report" method="post">
+        <div class="form-group">
+            <label>Coloca tu mensaje aqu&iacute;</label>
+            <textarea asp-for="Error" required class="form-control"></textarea>
+        </div>
+        <input type="submit" value="Enviar" class="btn btn-success"/>
+    </form>
+</div>

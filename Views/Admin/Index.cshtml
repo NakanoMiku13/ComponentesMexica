@@ -1,0 +1,259 @@
+﻿<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div id="modal-content">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="myModal2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div id="modal-content">
+                    ¿Estás seguro de querer descargar el log?
+                    Esto puede llevar tiempo; es importante que no cierres o cambies de pagina hasta que comience la descarga.
+                    <a class="btn btn-outline-success" asp-action="DownloadLog">Si</a>
+                    <a class="btn btn-outline-danger" asp-action="Index">No</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Descargar Log</h5>
+                <p class="card-text">Log protegido con contrase&ntilde;a enviada al administrador directamente para poder hacer descarga del mismo.</p>
+                <a class="btn btn-outline-warning" href="#myModal2" data-toggle="modal">
+                    Descargar
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-download" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                        <path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+            <h5 class="card-header">Empleados</h5>
+            <div class="card-body">
+                <h5 class="card-title">Contrataci&oacute;n de empleados</h5>
+                <p class="card-text">Apartado destinado a la contrataci&oacute;n de empleados, as&iacute; c&oacute;mo asignaci&oacute;n de roles.</p>
+                <a asp-action="Index" asp-controller="Employees" class="btn btn-primary">Ver</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+            <h5 class="card-header">Privilegios</h5>
+            <div class="card-body">
+                <h5 class="card-title">Creaci&oacute;n de roles especiales para manejo de datos</h5>
+                <p class="card-text">Apartado para el manejo de datos as&iacute; c&oacute;mo roles y privilegios de cada usuario.</p>
+                <div class="btn-group">
+                    <a asp-action="Index" asp-controller="Privileges" class="btn btn-primary">Ver</a>
+                    <a asp-action="PreLoadRoles" class="btn btn-outline-success">Pre-cargar roles base</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+            <h5 class="card-header">Entidades Federativas</h5>
+            <div class="card-body">
+                <h5 class="card-title">Precarga de metadatos de entidades federativas</h5>
+                <p class="card-text">Este apartado solo puede ser usado una vez, al momento de la publicaci&oacute;n; esta precarga en la base de datos todos los datos direccionales de todos los estados, municipios y alcaldias de M&eacute;xico</p>
+                <a asp-action="LoadData" class="btn btn-primary">Pre-Cargar</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+            <h5 class="card-header">Componentes</h5>
+            <div class="card-body">
+                <h5 class="card-title">Registro de componentes</h5>
+                <p class="card-text">En este apartado se registran los componentes a vender, en caso de editar algun componente se informara automaticamente e inmediatamente al administrador o administradores.</p>
+                <a asp-action="Index" asp-controller="Componentes" class="btn btn-primary">Ver</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+            <h5 class="card-header">BackUp</h5>
+            <div class="card-body">
+                <h5 class="card-title">Apartado dedicado a generar un backUp Manual</h5>
+                <p class="card-text">Este apartado esta dedicado a generar un backup completo de la base de datos para evitar perdidas, es recomendable hacerlo cada 7 d&Iacute;as. Este proceso puede tardar varias horas.</p>
+                <a asp-action="BackUp" class="btn btn-primary">Generar BackUp</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+            <h5 class="card-header">Categorias</h5>
+            <div class="card-body">
+                <h5 class="card-title">Creaci&oacute;n de categorias</h5>
+                <p class="card-text">Aqu&iacute; puedes crear las categorias para los componentes.</p>
+                <div class="btn-group">
+                    <a asp-action="Index" asp-controller="Categories" class="btn btn-primary">Ver</a>
+                    <a asp-action="PreLoadCat" class="btn btn-success">Pre-Cargar Categorias base</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+            <h5 class="card-header">Equipos pre-montados</h5>
+            <div class="card-body">
+                <h5 class="card-title">Apartado para la creaci&oacute;n de equipos pre-montados</h5>
+                <p class="card-text">En este apartado se crearan los equipos pre-montados, solo hay que darles nombres, descripci&oacute;n del equipo y as&iacute; c&oacute;mo seleccionar los componentes, la pagina calcular&aacute; automaticamente el coste.</p>
+                <a asp-action="Index" asp-controller="PCMRs" class="btn btn-primary">Ver</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+            <h5 class="card-header">Ordenes</h5>
+            <div class="card-body">
+                <h5 class="card-title">Apartado donde podras ver las ordenes realizadas.</h5>
+                <p class="card-text">Podras ver y modificar ciertas especificaciones de las ordenes, como el pago, el envio, entre otros.</p>
+                <a asp-action="Index" asp-controller="Orders" class="btn btn-primary">Ver</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+            <h5 class="card-header">Codigos Promocionales</h5>
+            <div class="card-body">
+                <h5 class="card-title">Crear, modificar y eliminar codigos promocionales</h5>
+                <p class="card-text">En este apartado puedes modificar o crear los codigos promocionales.</p>
+                <a asp-action="Index" asp-controller="PromoCodes" class="btn btn-primary">Ver</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+            <h5 class="card-header">Software</h5>
+            <div class="card-body">
+                <h5 class="card-title">Apartado para crear o modificar softwares</h5>
+                <p class="card-text">En este apartado podras crear softwares para poder vender.</p>
+                <a asp-action="Index" asp-controller="Software" class="btn btn-primary">Ver</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+            <h5 class="card-header">Mensajes</h5>
+            <div class="card-body">
+                <h5 class="card-title">Apartado de mensajes</h5>
+                <p class="card-text">En este apartado podr&aacute;s ver todos los mensajes hechos por los usuarios en el apartado de contacto.</p>
+                <a asp-action="Index" asp-controller="Contactos" class="btn btn-primary">Ver</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+            <h5 class="card-header">Errores</h5>
+            <div class="card-body">
+                <h5 class="card-title">Apartado para ver el reporte de errores</h5>
+                <p class="card-text">Secci&oacute;n dedicada a la revisi&oacute;n y an&aacute;lisis de errores reportados por los usuarios.</p>
+                <a asp-action="Index" asp-controller="Error" class="btn btn-primary">Ver</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+            <h5 class="card-header">Vendedores</h5>
+            <div class="card-body">
+                <h5 class="card-title">Apartado para ver las solicitudes de los vendedores.</h5>
+                <p class="card-text">Secci&oacute;n dedicada a ver los vendedores y los estados de este, as&iacute; c&oacute;mo sus productos y la reputaci&oacute;n de los mismos.</p>
+                <a asp-action="Index" asp-controller="Vendedors" class="btn btn-primary">Ver</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+            <h5 class="card-header">Reportes a Vendedores</h5>
+            <div class="card-body">
+                <h5 class="card-title">Apartado de reportes a vendedores</h5>
+                <p class="card-text">Apartado para ver los reportes que ha realizado un usuario hacia un vendedor.</p>
+                <a asp-action="Index" asp-controller="Report" class="btn btn-primary">Ver</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+            <h5 class="card-header">Rifas</h5>
+            <div class="card-body">
+                <h5 class="card-title">Apartado de rifas</h5>
+                <p class="card-text">Apartado para crear rifas, una vez se crea una, la anterior se desactiva.</p>
+                <div class="btn-group-sm">
+                    <a asp-action="Rifas" asp-controller="Rifa" class="btn btn-primary">Ver</a>
+                    <a asp-action="TicketComprados" class="btn btn-outline-warning">Tickets Comprados</a>
+                    <a asp-action="Ganadores" class="btn btn-info">Ganadores</a>
+                    <a asp-action="SetWinner" class="btn btn-success">Set winner</a>
+                    <a asp-action="FinishActual" class="btn btn-success">Finalizar rifa activa</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+            <h5 class="card-header">Featured</h5>
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+            <h5 class="card-header">Featured</h5>
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+            <h5 class="card-header">Featured</h5>
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+            <h5 class="card-header">Featured</h5>
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

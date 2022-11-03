@@ -1,0 +1,316 @@
+Anexando 157 logs en total, ordenados del más reciente al más antiguo.
+ID | User id | Log | Fecha
+-76m0s3G0e9F6q2f1Z6T-4-14N9[0A1Q9R7o9q-6 not defined User logged in 01/01/0001 0:00:00
+
+9h5s5I3s8e9J0K-24Y7u4B7t-81a9k1k4T5P5d-35C5W5u6Q0Q-5 not defined User logged in 01/01/0001 0:00:00
+
+0_3l-47u1s-12S6O3y4t0l8a7D0Q4A-9-3 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 27/10/2020 13:15:43
+
+-01N4A8w6L7S7m0M-18x6m7S-60\1{7d-6 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entró en AddComment/Productos 22/10/2020 19:20:36
+
+-03H3H7W7b7o6|-92A0B6I9J9D5f-19|6G4O9a8e5z5j5o-9 not defined Invalid login attempt. 22/10/2020 19:27:31
+
+-07t-91q2^0g7y-38P3G3q8l1O5q-7 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Descargarndo Log 27/10/2020 13:07:31
+
+0b8J8f2U7Y1L8}9b-6-44j1B8B1X-95^8d3L6r6\-7 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 20/10/2020 19:13:51
+
+0d7t9v1m-03g4_6[4Z2F5^5l4i-94S2W9s3j-55J4C0a8b5E6s2g6k3R-6 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario creó un reporte 22/10/2020 19:20:40
+
+0e2o1Z6H6_4F-61W1t0I5e5z5{-10e8o9f5y-01N7N2j-0 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entró en Index/Employee 22/10/2020 19:21:42
+
+0n8N1l3n0w6W4\-0-36M3t5k1i9P7A4j-85m0]6C8V3m-9 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 20/10/2020 19:27:40
+
+0p2M7i4G8w-05k3]6R0D9C1x2^0e-05n5^0C7{2T2D6D5X4h-81^0d8u0Z0c7J-1 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 27/10/2020 13:21:42
+
+0q1M2O3V1B-8-12r9n1g9b5d2u0t-40W9W4O-9 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario recomendó un producto 22/10/2020 19:28:01
+
+0R8A7u6g8u1o9{-30y4S6U0M3d8o0h8x-5-4-3 not defined Usuario entró en Mictlan/Productos 22/10/2020 19:28:03
+
+0S2p3j8B5L8S1s1e5n-35t2{0J6j-12d9r1h3A-6-1 not defined Usuario entró en Mictlan/Productos 22/10/2020 19:28:04
+
+0u0f1p2t2t7e9{-99a6T0z7O5I0_0x1n-24x4Q-8-4 not defined Usuario entró en Mictlan/Productos 22/10/2020 19:28:01
+
+0U7s6X9i4W6O-08m5y8Q1P-29g1e5I9j-21E3c4}8c5d3P7J2i9S-6 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario recomendó un producto 22/10/2020 19:28:02
+
+0v7u8}9U7Z0v1l9r6C-59h5C8w7[-71d-94a0Q3\8Y3j7g-7 not defined User logged in 22/10/2020 19:20:19
+
+0X8f8u7^-89x5q7x6D6w4K-48s6y9O-93X5Y7E4y8C2b9^2q4]-1 not defined Usuario entró en Index/Productos 22/10/2020 19:28:22
+
+0y1O-80G7E0U-47u5b4e2F8b2X5_-45y6i7v1X-8 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario precargo las categorias 20/10/2020 18:54:44
+
+1]-29c3^-01e0T-79n7|5i3B0P4r0D1k-9 not defined Usuario entró en Tlatelolco/Productos 22/10/2020 19:20:26
+
+1C8g5y-12j-79U1n-86V9]8P6A8\9u5e-3 not defined Usuario entró en Mictlan/Productos 22/10/2020 19:28:03
+
+1g5Q0{6{7\9A7f5H4F-96O7h9h4s8w7A-28{-84g7[0Q9v8k6c-2 not defined Usuario entró en Index/Home 22/10/2020 19:25:49
+
+1g9n0D3p1_4d9y-0-42O-77x5U2J2h6Y2]7e2{-6 not defined Usuario entró en Index/Productos 22/10/2020 19:20:33
+
+1h9Q3A3j-56C-74q-48D-1 not defined User logged in 14/10/2020 19:57:01
+
+1o1q9e2Y9j0p9T4P-80x-83S1C8[0[4U4d-19w9l7}2k0}5y3M6J6w-5 not defined Invalid login attempt. 22/10/2020 19:25:54
+
+1q6P2F2o4^2T9k5v-17{-45E6K0^7J8j0V4z2G-35k4R4s2t9L4I2\-1 not defined Usuario entró en Index/Home 22/10/2020 19:20:27
+
+1S-34x6_3l-62E2M3N3m9k1G-02W1j-6 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario recomendó un producto 22/10/2020 19:28:04
+
+1t1o1V0Q7R-33V3R1B3Q-45A-83h4S0D6Z9O3P8h2\-8 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Descargarndo Log 27/10/2020 13:13:28
+
+1T5Q7X2L0f2E1t2D5\-69A8Z7i6A3E4|9b-19}6H-63\5m2f1K-2 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 20/10/2020 18:59:12
+
+1U2S5D0V3B7K9U8I2r-21g5p8p7i3e-66x3A3^0D7W0W5{-99c-3 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario recomendó un producto 22/10/2020 19:28:03
+
+1v-91L5v9P7f0O7N-24E0C-5-5 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario Finalizo rifa 22/10/2020 19:23:31
+
+1w1\-47^6g3u8f9H-41_7\5|3E6J9k2o3P9m-30y-0 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 22/10/2020 19:25:43
+
+1x0D2w4i0M0_2y0n5U-30v9G6I5h8P5s8H-60Z-80y1A3}0l4c1]7J6|5g-1 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Descargarndo Log 27/10/2020 13:21:45
+
+1y6m-40G2e8A1x6D0{4s-03z7m9V4u2G4t6A3h-14{6[7S4e1x2b-2 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Ganadores/Admin 20/10/2020 19:24:50
+
+1z0E9I7U7X7H3X-05o2o2N-24w1\2S7C3g3m4V8C3q-27]-1 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario precargo datos de las entidades 20/10/2020 18:59:15
+
+2\-4-50b8Z4|-25y5Y5D4d4S3s7K3{-1 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 20/10/2020 18:57:08
+
+2\-59]4f8x-98o5f9n3B7y6G7x-37]4W1}-7 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario precargo datos de las entidades 20/10/2020 18:57:08
+
+-24]1G9C7z-64l-15J4d4_7q-7 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 20/10/2020 18:59:40
+
+-29d6w9l-57l6o0x9Y8t-46[5[7x5Z8P0W4I5W6e-7 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Categorias 22/10/2020 19:21:48
+
+2A1a1T0[1Z5^-11E6d-07^1H1N4d8h-85V0W7}-2 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 20/10/2020 19:10:51
+
+2c6r6D4p-2-42[4c5n-84C-5 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entró en Index/Privileges 22/10/2020 19:21:44
+
+2E0D8w-30|1P0|2S4b4c-55\3U2T7d1j2M7v7z0N-33c-9 not defined Usuario entró en Index/Home 27/10/2020 13:11:02
+
+2e7l6Z4\-26y-66T8F1x-52D3d6f8M1]3N-4 not defined Invalid login attempt. 22/10/2020 19:26:56
+
+2F2K3E-19x4k4V6e3q8\6W-38E6f-02A7a7c3v4P5^-2 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entró en Report/Error 22/10/2020 19:20:37
+
+2F3S6h6V8X8E2P-32A1U2t-8-68{8c3s7O0v1h9F6q1f-7 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 20/10/2020 19:12:11
+
+2G-12W6r3C7q0k9^-66l6o4k9f9z-6-9 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Descargarndo Log 27/10/2020 13:23:21
+
+2g9A5_9w6G5C-35w-78x0U5o7c2m9m-48u0c5Y-7 not defined Usuario entró en Index/Home 27/10/2020 13:23:16
+
+2H1X-4-13C2H9\-37F3d7s-9 not defined Usuario entró en Mictlan/Productos 22/10/2020 19:28:02
+
+2H-9-14z6C2t-59R4_0w9I4v1V8h0n-7 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 27/10/2020 13:07:26
+
+2i8n0v3S4b7d-62c-54i8|4Y1e6W7[7S4I1v-50]5K8j0g3u3k8E3C3u-3 not defined Usuario entró en Mictlan/Productos 22/10/2020 19:27:53
+
+2j8e2r2y-06C0p4V6M8A2F8n3T6t-20x9k7S6u3k-90x1v6H9F1R9L-1 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 29/10/2020 17:06:11
+
+2O7n-67a8N-2-3-2 not defined Usuario entró en Index/Home 22/10/2020 19:21:27
+
+2O9e9|9s5Y2w-37q0J4E1r1L7q-41v8d1W-27}6X-1 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 20/10/2020 19:24:56
+
+2P5u-15I6{9[9F3r7V4a1m6q-16_8e3h6w-94e6W4l9S1p7C5{7a5A-2 not defined Usuario entró en Index/Home 22/10/2020 19:20:01
+
+2Q-17H5L0v1R8C9W8X6b6X-09F6u5B1{6w-06t9{4]-7 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Ganador de rifa ha sido seleccionado 22/10/2020 19:23:28
+
+2u1O2S-35k6U5D2V1U6^7L-17E0T5]4V-49o2V7b3s5o-5 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 20/10/2020 18:54:44
+
+2x0u-55c0c8i3e9X8M9N-64P6G-43j1v0J2g-3 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 20/10/2020 19:13:43
+
+2X1_0M3B-87T0W-09b2G6E0j6E0T5f-32g4Y1E0u0J9U1N7j6i-7 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 20/10/2020 19:10:36
+
+3]6O0k8r9p3|8U-56P4R8k2s9H3M8H-29D4[5x5B8V0h4B-22x-3 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario recomendó un producto 22/10/2020 19:28:00
+
+3^7V4Z0n4M6k3c7n8j-23]4i-84t5O5n5C-34C5p1J0B-1 not defined Usuario entró en Index/Home 22/10/2020 19:20:16
+
+3_-74M4Q9{5_-25M7U9X-78C7}9Y9[-9 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 20/10/2020 19:24:51
+
+-31a4h0^1|4y2t5r-32u-66Z3]7w4P8u2M9h7r2z-5 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entró en Reportar/Report 22/10/2020 19:28:33
+
+3B3W9b0u-64|6B1P5i4q7f-24a3R1k8b8Q7U5c-32C0j0T2^7L6S4j7D6Q-5 null Excepción data Datos ya precargados 20/10/2020 19:24:50
+
+3e9r-78a-36r0y7v1O4[2W7Q-95y3N2Y9p3f2S-9 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en TicketsComprados/Admin 22/10/2020 19:23:24
+
+3k5D7F4n3\8m-42g7W8^5w7I1f-38w2r3t6t3e7J6_8K0l-14}7o7t-3 not defined Usuario entró en Mictlan/Productos 22/10/2020 19:28:00
+
+3L-75m-28}5]2Q3P4}3p-62H-2 null Excepción data Datos ya precargados 20/10/2020 19:24:52
+
+3m8{3X8h1Q-08n4r2k8q6Q8n2z5B7l-26p5t4y6z4X-58M-1 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 20/10/2020 19:16:38
+
+3N3}4F7f7Z1Q3B2b-70z9v4t3n0o3r2f-29x0Q9D3t7A0n-01x1B4O5i5U1l2P1x6n-4 not defined Usuario entró en Index/Home 27/10/2020 13:07:10
+
+3r4g-04W6o6z8E6L1g-29P4j7v7i8k3x5o5B-22n1x-7 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario recomendó un producto 22/10/2020 19:28:02
+
+3R8\6f9W6z2P6a-21}5k5o4d4g-83k6u4X1E5P8D2b1j1A-01j4u5T4j4}4u-1 not defined User logged in 22/10/2020 19:20:33
+
+3T1I1n7g-77V-97}-76_5f5C1o5B2t0M3^9v-0 not defined Usuario entró en Index/Home 22/10/2020 19:20:19
+
+3t6r-2-01W5p9{8m6r7i-01J2b6n-6 not defined Usuario entró en Mictlan/Productos 22/10/2020 19:28:02
+
+3w0^5L4g9o-46V3A6P7X5I8k9r-52b8N1J-59e9}8w9Y4t1o-2 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario precargo las categorias 20/10/2020 19:24:52
+
+3X2o-81E0B9M7y-74u6v0U0E0T3\0J2w-58e3E1w-2 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario finalizó el reporte 22/10/2020 19:20:44
+
+4^9z4g8l0d7B4b1F9X-13|2T4{-17B3q9A-47a-6 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario finalizó el reporte 22/10/2020 19:28:20
+
+4|-14\5q9i9k-70M9X-04t2B-8 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 20/10/2020 19:34:48
+
+-47v6d6r-75r9h7O6|7K3u2}-91g0n4Z5p-9 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario recomendó un producto 22/10/2020 19:28:03
+
+4g0m4W6B8w1z8x-52D2J5P7S7B-26P4N6[-28g6H6[9g9F9h7c-3 not defined Usuario entró en Mictlan/Productos 22/10/2020 19:28:01
+
+4g3n2G9]2M-46j8B5z8W9e0U-47V9g0I6d8l0m-33E3s9i6b7s7d1u7]-5 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario precargo datos de las entidades 20/10/2020 19:14:00
+
+4g5T0W4a0G0l2q7D-98l8R-05Y8W4q4^6o1n-80h-8 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 27/10/2020 13:13:25
+
+4H8h9i0g6P9L5D6p-97]1c2m5y9b7h5_3R-22o6m-6-1 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Descargarndo Log 27/10/2020 13:15:46
+
+4I9x0c2w1K1E1K3e0P-84Y8H7C2q9h7t5]4|7x-16b8L9s1i0q6E8E6U-77q8e3E8N7B2h1q-6 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Descargarndo Log 29/10/2020 17:06:14
+
+4J3h7t1}0V9w3h7S9e-72L4F8a-27|7M5[9c7n-44y8[1S2e5d2J-9 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 22/10/2020 19:23:25
+
+4m9\2U2J9Z-4-75i8w9Z6o9v-4-0 not defined Usuario entró en Tlatelolco/Productos 22/10/2020 19:20:34
+
+4O1c9N5|3j5B9d4e9n-66i-99Y4q2|2p-36U9U5J-0 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario recomendó un producto 22/10/2020 19:28:04
+
+4T7[4i-12X8a0R3P9}3W9O-69{3R5O2c2d2}6W6N-02A1a3R2m0W2^6m-5 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 22/10/2020 19:23:31
+
+4X9B4g4}-9-52p8Z-72^1]7v8{-2 not defined User logged in 22/10/2020 19:27:48
+
+4Y-67_-10\2q8[4a6e9E6T4j-12[-5 not defined Usuario entró en Mictlan/Productos 22/10/2020 19:28:08
+
+5[-3-14u7j4F0H-99b5^3T0o7b0y3]-8 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario precargo datos de las entidades 20/10/2020 19:16:33
+
+5B-65V4r5O5l5]0d-90g1f8C0G8P8B8z9L4^-97J7i1g9O-3 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 20/10/2020 18:57:06
+
+5c5[4T0n8c9f9e8V9G-05C4n9T1u5c9p1O8c3k-22L-17C7v8P7N-3 not defined Usuario entró en Mictlan/Productos 22/10/2020 19:28:04
+
+5C8t-40\7a-3-33e2^1w5c-3 not defined Usuario entró en Mictlan/Productos 22/10/2020 19:28:03
+
+5D6n8e8X5J8r-59X8T9x8F1P5f-82[5|0o6k5N2_8G1C5k-74q-4 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 20/10/2020 18:54:42
+
+5L3v0r-56Z7_6|-70y5r9z0G8N4W2M1O4j-70s2g7j1y2c3s-8 null Excepción data No hay rifas activas 22/10/2020 19:23:28
+
+5M1]3V5s9p-35U4[0s7A7O8H6^7Q5p-63}1P2x6b7]-37i5Z-6 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Ganadores/Admin 20/10/2020 18:54:40
+
+5m7a9\4\6L-66V1Q4o2\4y-70k3H3\0{6y1v0D6u4o-81S8q8^6b3G0Q9P-7 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 20/10/2020 18:54:36
+
+5M7R3S0D5X-40f9s5k8\-26t9_8E2i6Y-53M6H2v5]3Y0u6L7k-7 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 27/10/2020 13:11:10
+
+5o2h6P6k2T3v2u-14X2y4X7x1N3|6s-15e1N5X1w9u-07A3O2V1Y7\0z7L-6 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 20/10/2020 19:24:53
+
+5r-52R5f9M4M2L1]2A7c-94T0O5Y-33N6^9M-8 not defined Usuario entró en Index/Home 27/10/2020 13:18:22
+
+5W2G1P6G8S5q8M6R6b-12^6}9K7B1E8X3j3k6t-83[6^6J2k7Q9^5n3N-85K7B8v-9 not defined Usuario entró en Mictlan/Productos 22/10/2020 19:27:58
+
+5W8g-28O6I6I-80e0o3i0Z4{3s0j3e1v-01e0A8r2n-8 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario recomendó un producto 22/10/2020 19:28:01
+
+5X0r9g0d2_7s6o5U-6-87P6W2f9X2[6R7V-95i0S8w5J2i0d6x-7 not defined Usuario entró en Mictlan/Productos 22/10/2020 19:28:24
+
+5x0Y-63u6N-90\7D6w9^0H6O-5-5 not defined User created 14/10/2020 19:34:21
+
+5x4S-96Z2[3V1g4|6S9C-86s8J5g2A8v2F0y-94H8x3N5[8u3z7V6Z9A-9 not defined Invalid login attempt. 22/10/2020 19:27:18
+
+6_1[3z2|1X-61d1v0l-68N3E1h0e4R-84F3k-8 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 20/10/2020 19:14:19
+
+6{-24z3x5Z2f2[8q3o5G8]-52N-37x3v5J3i-6 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 27/10/2020 13:23:18
+
+6{4U-86_5X5i4X4B1N1m-98|3R7A1g-77l0s4B5Z-4 not defined Usuario entró en Index/Home 27/10/2020 13:21:31
+
+6D1R-22y4s1w5x7B7t1C1g9u-00Y2x6U4R5R-12K-0 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Descargarndo Log 27/10/2020 13:18:27
+
+6I2u6j0Z9P-55^4d3Q2n4E8H1D6R-80{9K2[1x0u2f1s-26F0O6C-3 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 22/10/2020 19:21:45
+
+6o6G5L5K6C-80o8_0r-02O6h5c-31w-3 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario recomendó un producto 22/10/2020 19:28:01
+
+6O7M5[7S7E5E5P-4-96U-23T6l4R-2 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Descargarndo Log 27/10/2020 13:11:13
+
+6S2W1a7n9S-75F1D0e0t6G4]3{4w-89K0A7f4c8j8k7b5W1|-08d0|8x2U3m9w-7 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario recomendó un producto 22/10/2020 19:28:04
+
+6u0H-91N4j6P-85[-13C0x1E7n-8 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario recomendó un producto 22/10/2020 19:27:58
+
+6U5P8{-5-86R2r6|-10p0b9I6^3r-5 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entró en Report/Error 22/10/2020 19:28:13
+
+6V8]9a-90p-99b6c0j7z-84P5A3w-1 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 20/10/2020 19:14:06
+
+6w1a6Q3n8a6[-08^1N4W0v2f-96^6x5Y2B2A-55^3Q3[2O9v-8 not defined Usuario entró en Mictlan/Productos 22/10/2020 19:28:01
+
+6W8B7Z9}7j8c6e0D-38r0A7b7X-42t7[7l9X8O3K2]3p8A-3-3 not defined Invalid login attempt. 22/10/2020 19:27:26
+
+6Y8L1D-64S7F1j4j8h3I9M7m6{-09]8P9_3r-16}6i7i9G3z8}8D2G5B-3 not defined Usuario entró en Index/Productos 22/10/2020 19:27:48
+
+7A0Z3a3O4O4y2Q3V1S-22S3N7g4W7u5L-32v6C2b7|7o-18G4_0}4_9i9e7T4|2g-8 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario precargo datos de las entidades 20/10/2020 19:25:01
+
+7c2s8K5T7F2J7M-22T-28J-2-2 not defined Usuario entró en Mictlan/Productos 22/10/2020 19:28:04
+
+7C6i8k9|2J8{8S4t-69W3G2C-05_8M4S8f8E5{-91Z-0 not defined Usuario entró en Index/Productos 22/10/2020 19:20:22
+
+7e4_3p5M3}2Q5U-76]4R5l6{2f0x4C-83]4A4v6g3I3w1p8P-71T9O-5 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entró en AddComment/Productos 22/10/2020 19:20:26
+
+7i2G6A3r-18K0J9n2e3S1h2H2P8u-06H7v6Y9h4X5p-55[0N3q9K5r1E-7 not defined Usuario entró en Index/Home 29/10/2020 17:05:59
+
+7k2J7d4L3Q3d-63I6L9I6B2H3D5q9J0b-54e8A6L1a5F5y4{1J1d-73b1R1z2j2v9Y-8 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 22/10/2020 19:21:43
+
+7L3N3N5{-9-5-92r3}-2 not defined Usuario entró en Tlatelolco/Productos 22/10/2020 19:20:24
+
+7L7r1k6Y4b9W2f1x-64Z4H9R-71N5x9w9E2D2k-22Q8}6M-5 not defined Usuario entró en Mictlan/Productos 22/10/2020 19:29:12
+
+7q5N0S9K4t6L9I-1-61T5Q6\0H-47o5J-6 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario precargo datos de las entidades 20/10/2020 19:11:13
+
+7t2J9I-0-7-55w4s-8 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 22/10/2020 19:23:27
+
+7u4c1Q8P5Y1k8g5g-61l6k3l6b5^3x-89r6q6L8f-46D5{9F-9 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 20/10/2020 19:24:47
+
+7y2r0t-13B-88\7w5y7_3A1l2]-76Z8B4s7W1b8I-5 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entró en Index/MisCompras 22/10/2020 19:25:35
+
+7Y8Q3O5{2g-52R7[5Z1t5S6c4b-78t6f2V-86t5R0T1Z-6 not defined Invalid login attempt. 22/10/2020 19:27:35
+
+7Z8I-02e-45}3J9z8^0z1D-1-6 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario precargo datos de las entidades 20/10/2020 18:54:46
+
+8\7y5L8c3j-80g-12w9k2r1t-03l0x5|-1 not defined Usuario entró en Mictlan/Productos 22/10/2020 19:28:02
+
+8|5T1d0|5K3o0B-67{0c2\1L3P2^9X7x-96U7l8z1j6S9p3W2_8Z-47y7e2Z6g7D6b8p-4 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario precargo datos de las entidades 20/10/2020 19:14:14
+
+8h4r-60o8k7H2L1w2C2M-26l5s1]4i-51V-2 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Ganadores/Admin 22/10/2020 19:23:26
+
+8J5U1Q3Z4O-64\-47C5f6]6r4o-07a1D1i6x8y7s-1 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 22/10/2020 19:23:29
+
+8L1V0U0P5f-85l7V4T1l6r1i3e2k2k-05H1c1p7U2J4v6A0Q-50v2b0x8^3G-4 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 22/10/2020 19:21:40
+
+8X0Y8[1Q3E7k1R3w3M-94[3g4m7E9^3}9Y5G-12u-3-1 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 27/10/2020 13:18:24
+
+8X4k8I-75[9P6J3g1D1Y5m0S3M-69Z1U1t7Z-38b2a8[4i2A3y7A5w-3 not defined Invalid login attempt. 22/10/2020 19:27:22
+
+8z-25]0i9y1G2T5j9|2^-0-4-9 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario creó un reporte 22/10/2020 19:28:18
+
+8z7E1|2h8S3A1]1n3h-65Z5[9i2q8{-94{4{9X3E0T2e3o7K-85[8e-2 not defined Usuario entró en Index/Productos 22/10/2020 19:20:48
+
+9{7n7N3E2|6m5p6j-10E6p2U-8-78R5K6m8A9p0M3u2P-5 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 20/10/2020 19:16:29
+
+-91o2D7{3^4W5W-97G9M1w3}6P4w5H2M8y-22\7V0H4V1h6}5A1]-9 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Ganadores/Admin 20/10/2020 19:24:54
+
+-95\0z3r1^0J0D-15i1p1K2q9x1H7n8G-25W9z5Z2m3M1B6W4[1d-7 not defined Usuario entró en Privacy/Productos 22/10/2020 19:28:07
+
+-98m-06S8b9M-1-3 not defined Usuario entró en Mictlan/Productos 22/10/2020 19:28:00
+
+9b-21i2D9K-88P5A-13T4T8k9T7m-3 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario recomendó un producto 22/10/2020 19:28:03
+
+9B2O-98v9V4M9W8p1i2t-09B4Z6P-71{5Q6M2h0^6E9Z4P-9 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 20/10/2020 19:24:54
+
+9C3N5l-58|-64[0v-03j5O5t9G8|9L-3 not defined Invalid login attempt. 22/10/2020 19:26:00
+
+9d4P2n6B5\4T3A7V0M-47C8Z6v1G8\8A9e8W-78e1Z4O5{7A7E-38X-5 null Excepción data Datos ya precargados 20/10/2020 19:24:54
+
+9f4w7w6i1O3Y1O9z-51P6v3p2q5_-25V2g2U1D6B6k-88i6Y-9 not defined Usuario entró en Index/Home 27/10/2020 13:13:20
+
+9H3q5m6V0_1Z-94F7f1T6f-19u0^4z7_1^9}0}-02Y1k-5 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario precargo datos de las entidades 20/10/2020 19:10:40
+
+9K2A7j9W3H2T5L7e-04m3d6w2D2m6B2c-88h3f8z-82v6I8Z7Q1}4C-6 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario precargo datos de las entidades 20/10/2020 19:13:45
+
+9M0L2x-73H-60]-10}4{0S1w-8 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario entro en Index/Admin 22/10/2020 19:21:49
+
+9o2t-03T5y1\0U1a4Y1N-61]8z1p-79L5a3Q6x8a7b2b4F-5 not defined Usuario entró en Index/Home 27/10/2020 13:15:35
+
+9q4I9I9j6{1L9d9s-14n2S6n5Q-49g5i9z7r-6-5 not defined Usuario entró en Tlatelolco/Productos 22/10/2020 19:20:36
+
+9W1\9j-70C0K3b4Y9a4|8j7F-74Q2A9o1u8z6S0n7F-52g-0 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario recomendó un producto 22/10/2020 19:28:00
+
+9Y6r1{8M2Z9h2]-4-32i7R6F7n6w4W3|-38g9z-5 b3f246dd-6190-46f2-bc4d-ae9de7285fc9 Usuario recomendó un producto 22/10/2020 19:28:02
+

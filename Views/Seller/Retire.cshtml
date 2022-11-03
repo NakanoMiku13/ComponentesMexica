@@ -1,0 +1,74 @@
+﻿@model SellerRetire
+@{
+    ViewData["Title"] = "Retire";
+}
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div id="modal-content">
+                    En caso de haber solicitado un retiro de efectivo y tienes dudas de que datos poner en este campo, solamente deber&aacute;s colocar lo siguiente:
+                    En caso de solicitar <span class="font-weight-bold">CLABE</span> tendr&aacute;s que ingresar los 18 d&iacute;gitos de la CLABE,
+                    en caso de solicitar <span class="font-weight-bold">Mercado Pago</span> tendr&aacute;s que ingresar tu n&uacute;mero telef&oacute;nico <span class="font-weight-bold">asociado a tu cuenta de Mercado Libre o Mercado Pago</span>,
+                    en caso de solicitar <span class="font-weight-bold">PayPal</span> tendr&aacute;s que ingresar el correo y tu nombre y/o el nombre que tienes para recibir dinero en tu cuenta PayPal <span class="font-weight-bold">(SIN ARROBA)</span> separado por comas (Ejemplo: fernandoprueba@hotmail.com, Fernando C&aacute;zares, FCasarez182),
+                    en caso de solicitar <span class="font-weight-bold">D&eacute;posito a cuenta bancaria</span> tendr&aacute;s que ingresar el n&uacute;mero de cuenta, el nombre del propietario de la cuenta y el banco asociado separado por comas (Ejemplo: 999999999, Fernando C&aacute;zares Olgado, Bancomer).
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 alert alert-secondary">
+        <h5>Estas a punto de retirar tu dinero obtenido por tus ventas que es un total de: <span class="text-success">@ViewBag.Nomi.Total</span> este dinero ser&aacute; depositado por el medio que selecciones a continuaci&oacute;n, este puede tardar cierto tiempo dependiendo el mismo, as&iacute; como la cantidad; cabe mencionar que la cantidad que desees retirar tendr&aacute; una calificaci&oacute;n de prioridad en base a la cantidad, la cual puedes ver a continuaci&oacute;n</h5>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 alert alert-success">
+        <h5 class="text-danger">Prioridad baja</h5>
+        <h5>Menos de 500 de 24-120hrs</h5>
+        <h5 class="text-danger">Prioridad Media</h5>
+        <h5>Menos de 3000 de 24-72hrs</h5>
+        <h5 class="text-danger">Prioridad Alta</h5>
+        <h5>A partir de 3000 o m&aacute;s de 24-36hrs</h5>
+        <h5>**Los tiempos varian en esos rangos seg&uacute;n la cantidad y el metodo de deposito. As&iacute; c&oacute;mo la demanda de solicitudes o retiros.**</h5>
+        <h5>**Los depositoslos puedes solicitar en cualquier momento y d&iacute;a del a&ntilde;o, las 365hrs, en excepci&oacute;n de los dep&oacute;sitos a cuenta bancaria, estos solo se har&aacute;n en d&iacute;as h&aacute;biles.</h5>
+
+        <br />
+        <hr />
+        <h4>Tu referencia de pago es: @ViewBag.Nomi.Referencia</h4>
+    </div>
+</div>
+<div class="row">
+    <form asp-action="Retire">
+        <div class="form-group">
+            <label>
+                Metodo de retiro
+            </label>
+            <select class="form-control" asp-for="Metodo" required>
+                <option disabled selected>--Selecciona uno--</option>
+                <option value="Paypal">Paypal</option>
+                <option value="MercadoPago">Mercado Pago</option>
+                <option value="CLABE">CLABE</option>
+                <option value="Deposito">Deposito a cuenta bancaria</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>
+                Dato de retiro
+                <a href="#myModal" data-toggle="modal" class="btn btn-outline-info">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-question-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                        <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+                    </svg>
+                </a>
+            </label>
+            <input class="form-control" asp-for="Mail"/>
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-success" value="Completar" asp-route-refe="@ViewBag.Nomi.Referencia"/>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,137 @@
+﻿@model ComponentesMexica.Data.ViewModels.ShoppingCartViewModel
+<div class="row">
+    <div class="col-lg-8 col-md-8 col-sm-8">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Cantidad</th>
+                    <th>Producto</th>
+                    <th class="text-right">Precio</th>
+                    <th class="text-right">Subtotal</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var line in Model.ShoppingCart.ShoppingCartItems)
+                {
+                    @if (line.Componente != null)
+                    {
+                        <tr>
+                            <td class="text-center">
+                                <a class="btn btn-outline-danger" asp-action="RemoveOne" asp-route-Id="@line.Componente.id" asp-route-category="componente">-</a>
+                                @line.Cantidad
+                                <a class="btn btn-outline-success" asp-action="AddOne" asp-route-Id="@line.Componente.id" asp-route-category="componente">+</a>
+                            </td>
+                            <td class="text-left">@line.Componente.Modelo</td>
+                            <td class="text-right text-success">@line.Componente.PrecioVenta.ToString()</td>
+                            <td class="text-right">
+                                @((line.Cantidad * line.Componente.PrecioVenta).ToString())
+                            </td>
+                            <td class="text-center">
+                                <a class="btn btn-outline-danger" asp-controller="ShoppingCart" asp-action="RemoveFromCart" asp-route-Id="@line.Componente.id"asp-route-category="componente">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                        <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                    if (line.PCMR != null)
+                    {
+                        <tr>
+                            <td class="text-center">
+                                <a class="btn btn-outline-danger" asp-action="RemoveOne" asp-route-Id="@line.PCMR.id"asp-route-category="PCMR">-</a>
+                                @line.Cantidad
+                                <a class="btn btn-outline-success" asp-action="AddOne" asp-route-Id="@line.PCMR.id" asp-route-category="PCMR">+</a>
+                            </td>
+                            <td class="text-left">@line.PCMR.Nombre</td>
+                            <td class="text-right text-success">@line.PCMR.PrecioVenta.ToString()</td>
+                            <td class="text-right">
+                                @((line.Cantidad * line.PCMR.PrecioVenta).ToString())
+                            </td>
+                            <td class="text-center">
+                                <a class="btn btn-outline-danger" asp-controller="ShoppingCart" asp-action="RemoveFromCart" asp-route-Id="@line.PCMR.id" asp-route-category="PCMR">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                        <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                    if (line.Software != null)
+                    {
+                        <tr>
+                            <td class="text-center">
+                                <a class="btn btn-outline-danger" asp-action="RemoveOne" asp-route-Id="@line.Software.id"asp-route-category="software">-</a>
+                                @line.Cantidad
+                                <a class="btn btn-outline-success" asp-action="AddOne" asp-route-Id="@line.Software.id"asp-route-category="software">+</a>
+                            </td>
+                            <td class="text-left">@line.Software.Nombre</td>
+                            <td class="text-right text-success">@line.Software.Precio.ToString()</td>
+                            <td class="text-right">
+                                @((line.Cantidad * line.Software.Precio).ToString())
+                            </td>
+                            <td class="text-center">
+                                <a class="btn btn-outline-danger" asp-controller="ShoppingCart" asp-action="RemoveFromCart" asp-route-Id="@line.Software.id" asp-route-category="software">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                        <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                    if (line.SegundaMano != null)
+                    {
+                        <tr>
+                            <td class="text-center">
+                                <a class="btn btn-outline-danger" asp-action="RemoveOne" asp-route-Id="@line.SegundaMano.id" asp-route-category="secondHand">-</a>
+                                @line.Cantidad
+                                <a class="btn btn-outline-success" asp-action="AddOne" asp-route-Id="@line.SegundaMano.id" asp-route-category="secondHand">+</a>
+                            </td>
+                            <td class="text-left">@line.SegundaMano.Modelo</td>
+                            <td class="text-right text-success">@line.SegundaMano.PrecioVenta.ToString()</td>
+                            <td class="text-right">
+                                @((line.Cantidad * line.SegundaMano.PrecioVenta).ToString())
+                            </td>
+                            <td class="text-center">
+                                <a class="btn btn-outline-danger" asp-controller="ShoppingCart" asp-action="RemoveFromCart" asp-route-Id="@line.SegundaMano.id" asp-route-category="secondHand">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                        <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+                    }
+
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" class="text-right">Total:</td>
+                    <td class="text-right text-success">
+                        $@Model.ShoppingCartTotal.ToString()
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="text-right">
+            <div class="btn-group ">
+                <a class="btn btn-success" asp-controller="Orders" asp-action="Checkout">Comprar</a>
+                <a class="btn btn-primary" asp-controller="Productos" asp-action="Tlatelolco">Regresar</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4">
+        <form method="post" asp-action="PromoCode">
+            <div class="form-group">
+                <label>Codigo Promocional</label>
+                <input asp-for="PromoCode" type="text" placeholder="Inserta un codigo" class="form-control"/>
+            </div>
+            <input type="submit" class="btn btn-outline-primary" value="Aplicar"/>
+        </form>
+    </div>
+</div>

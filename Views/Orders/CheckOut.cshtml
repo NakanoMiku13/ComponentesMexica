@@ -1,0 +1,77 @@
+﻿@model ComponentesMexica.Data.Models.Order
+<div class="row">
+    <div class="col-12">
+        <h4 class="mb-3">Datos Personales</h4>
+        <form asp-action="CheckOut" method="post">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label>Nombre</label>
+                    <input asp-for="Nombre" type="text" class="form-control" id="firstName" placeholder="Tu Nombre" required>
+                    <div class="invalid-feedback">
+                        Valid first name is required.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="lastName">Apellidos</label>
+                    <input asp-for="Apellidos" type="text" class="form-control" id="lastName" placeholder="Tus apellidos" required>
+                    <div class="invalid-feedback">
+                        Valid last name is required.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label>N&uacute;mero</label>
+                    <input asp-for="Numero" type="number"  class="form-control" placeholder="Tu numero de celular"/>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>Metodo de pago</label>
+                    <select asp-for="MetodoPago" required class="form-control">
+                        <option selected disabled>--Selecciona una--</option>
+                        <option value="Paypal" disabled>Paypal</option>
+                        <option value="MercadoPago" disabled>Mercado Pago</option>
+                        <option value="Deposito" disabled>Deposito bancario</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="address">Direcci&oacute;n</label>
+                <input asp-for="Direccion" type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                <div class="invalid-feedback">
+                    Por favor coloca tu direcci&oacute;n para poder realizar la entrega.
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5 mb-3">
+                    <label for="country">Estado</label>
+                    <select asp-for="Estado" required asp-items="ViewBag.Estados" class="form-control">
+                        <option selected disabled>--Seleccione uno--</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select a valid country.
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="state">Codigo Postal</label>
+                    <input class="form-control" readonly value="Selecciona primero el estado y dale a continuar"/>
+                    <div class="invalid-feedback">
+                        Please provide a valid state.
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="zip">Colonia</label>
+                    <input class="form-control" readonly value="Selecciona primero el estado y dale a continuar"/>
+                    <div class="invalid-feedback">
+                        Zip code required.
+                    </div>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="custom-control custom-checkbox">
+                <input asp-for="Politicas" type="checkbox" class="custom-control-input" id="same-address" required>
+                <label class="custom-control-label" for="same-address">Acepto las politicas de privacidad</label>
+            </div>
+            <input type="submit" value="Continuar" asp-route-sid="@ViewBag.id" class="btn btn-outline-success"/>
+        </form>
+    </div>
+</div>

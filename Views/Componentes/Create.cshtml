@@ -1,0 +1,83 @@
+﻿@model ComponentesMexica.Data.ViewModels.ComponenteViewModel
+<h1>Create</h1>
+
+<h4>Componente</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Marca" class="control-label"></label>
+                <input asp-for="Marca" class="form-control" />
+                <span asp-validation-for="Marca" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Modelo" class="control-label"></label>
+                <input asp-for="Modelo" class="form-control" />
+                <span asp-validation-for="Modelo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PrecioCompra" class="control-label"></label>
+                <input asp-for="PrecioCompra" class="form-control" />
+                <span asp-validation-for="PrecioCompra" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Descripcion" class="control-label"></label>
+                <input asp-for="Descripcion" class="form-control" />
+                <span asp-validation-for="Descripcion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Imagen" class="control-label"></label>
+                <input asp-for="Imagen" class="form-control" />
+                <span asp-validation-for="Imagen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Categoryid" class="control-label"></label>
+                <select asp-for="Categoryid" asp-items="ViewBag.Categoryid" class="form-control" required></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Formato" class="control-label"></label>
+                <select asp-for="Formato" class="form-control" required>
+                    <option selected disabled>--Seleccione una opci&oacute;n--</option>
+                    <option value="ATX">ATX</option>
+                    <option value="MiniITX">Mini ITX</option>
+                    <option value="MicroATX">Micro ATX</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3.5">3.5</option>
+                    <option value="M.2">M.2</option>
+                    <option value="SingleFan">Ventilador unico</option>
+                    <option value="DobFan">Dos ventiladores</option>
+                    <option value="TripFan">Triple Ventilador</option>
+                    <option value="NoValid">No aplica</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Escriba "0" en caso de que no aplique</p>
+                <label asp-for="Capacidad" class="control-label"></label>
+                <input asp-for="Capacidad" required class="form-control"/>
+            </div>
+            <div class="form-group">
+                <p>En caso de no ser v&aacute;lido escriba "0"</p>
+                <label asp-for="Socket"></label>
+                <input asp-for="Socket" required class="form-control" />
+            </div>
+            <div class="form-group">
+                <p>Escriba "0" en caso de que no aplique</p>
+                <label class="control-label" asp-for="Wattage"></label>
+                <input class="form-control" asp-for="Wattage" required />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Regresar</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

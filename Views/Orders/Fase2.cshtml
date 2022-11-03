@@ -1,0 +1,98 @@
+﻿@model ComponentesMexica.Data.Models.Order
+<div class="row">
+    <div class="col-12">
+        <h4 class="mb-3">Datos Personales</h4>
+        <form asp-action="Fase2" method="post">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label>Nombre</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Tu Nombre" readonly value="@Model.Nombre">
+                    <div class="invalid-feedback">
+                        Valid first name is required.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="lastName">Apellidos</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Tus apellidos" readonly value="@Model.Apellidos">
+                    <div class="invalid-feedback">
+                        Valid last name is required.
+                    </div>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-6 mb-3">
+                    <label>N&uacute;mero</label>
+                    <input readonly class="form-control" placeholder="Tu numero de celular" value="@Model.Numero" />
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>Metodo de pago</label>
+                    <input readonly class="form-control" value="@Model.MetodoPago" />
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="address">Direcci&oacute;n</label>
+                <input type="text" class="form-control" id="address" placeholder="1234 Main St" readonly value="@Model.Direccion">
+                <div class="invalid-feedback">
+                    Por favor coloca tu direcci&oacute;n para poder realizar la entrega.
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5 mb-3">
+                    <label for="country">Estado</label>
+                    <input type="text" value="@Model.Estado" readonly class="form-control" />
+                    <div class="invalid-feedback">
+                        Please select a valid country.
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="state">Codigo Postal</label>
+                    <input type="text" value="@Model.CP" readonly class="form-control" />
+                    <div class="invalid-feedback">
+                        Seleccione uno.
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="zip">Colonia</label>
+                    <select asp-for="Colonia" asp-items="ViewBag.Asenta" class="form-control">
+                        <option selected disabled>--Seleccione una--</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Seleccione uno.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label>M&eacute;todo de envio</label>
+                        <select required asp-for="MetodoEnvio" class="form-control">
+                            <option selected disabled>--Seleccione una--</option>
+                            @if (Model.Estado == "Ciudad de México")
+                            {
+                                <option value="Express">Env&iacute;o Express (Solo CDMX) +$250</option>
+                                <option value="Strd">Env&iacute;o Standard (Solo CDMX) +$150</option>
+                            }
+                            <option value="CorreosMexico">Env&iacute;o por paqueteria (Correos de M&eacute;xico) +$250</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card border-info col-lg-6 col-md-6 col-sm-12">
+                    <div class="card-body text-info">
+                        <h5 class="card-title">Env&iacute;o Standard</h5>
+                        <p class="card-text">Todos los encargos solicitados antes del jueves de la respectiva semana se enviar&aacute;n el domingo de la misma semana.</p>
+                        <p class="card-text">En caso de hayas hecho un encargo el d&iacute;a despues del corte se agendr&aacute; el env&iacute;o a la siguiente semana.</p>
+                    </div>
+                </div>
+                <div class="card border-info col-lg-6 col-md-6 col-sm-12">
+                    <div class="card-body text-info">
+                        <h5 class="card-title">Env&iacute;o Express</h5>
+                        <p class="card-text">Todos los encargos Express se har&aacute;n en un plazo de 3 d&iacute;as o menos tras a la validaci&oacute;n del pago.</p>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="Finalizar" asp-route-dataid="@ViewBag.id" class="btn btn-outline-success"/>
+        </form>
+    </div>
+</div>

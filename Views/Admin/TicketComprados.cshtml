@@ -1,0 +1,64 @@
+﻿@model IEnumerable<ComponentesMexica.Data.Models.RifaOrder>
+
+@{
+    ViewData["Title"] = "TicketComprados";
+}
+
+<h1>Tickets Comprados</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.userid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CantTickets)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.total)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Acreditado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReferenciaPago)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rifaid)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.userid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CantTickets)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.total)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Acreditado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReferenciaPago)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rifaid)
+            </td>
+            <td>
+                <div class="btn-group">
+                    <a class="btn btn-outline-success" asp-action="AcceptBuyTicket" asp-route-userid="@item.userid" asp-route-refpago="@item.ReferenciaPago">Acreditar pago</a>
+                    <a class="btn btn-outline-danger" asp-action="DenyTicketBuy" asp-route-userid="@item.userid" asp-route-refpago="@item.ReferenciaPago">Denegar pago</a>
+                </div>
+                
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

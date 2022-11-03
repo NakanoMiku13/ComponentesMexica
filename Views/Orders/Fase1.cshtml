@@ -1,0 +1,67 @@
+﻿@model ComponentesMexica.Data.Models.Order
+<div class="row">   
+    <div class="col-12">
+        <h4 class="mb-3">Datos Personales</h4>
+        <form asp-action="Fase1" method="post">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label>Nombre</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Tu Nombre" readonly value="@Model.Nombre">
+                    <div class="invalid-feedback">
+                        Valid first name is required.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="lastName">Apellidos</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Tus apellidos" readonly value="@Model.Apellidos">
+                    <div class="invalid-feedback">
+                        Valid last name is required.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label>N&uacute;mero</label>
+                    <input readonly class="form-control" placeholder="Tu numero de celular" value="@Model.Numero"/>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>Metodo de pago</label>
+                    <input readonly class="form-control" value="@Model.MetodoPago"/>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="address">Direcci&oacute;n</label>
+                <input type="text" class="form-control" id="address" placeholder="1234 Main St" readonly value="@Model.Direccion">
+                <div class="invalid-feedback">
+                    Por favor coloca tu direcci&oacute;n para poder realizar la entrega.
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5 mb-3">
+                    <label for="country">Estado</label>
+                    <input type="text" value="@Model.Estado" readonly class="form-control" />
+                    <div class="invalid-feedback">
+                        Please select a valid country.
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="state">Codigo Postal</label>
+                    <select asp-for="CP" asp-items="ViewBag.CP" class="custom-select d-block w-100" required>
+                        <option selected disabled>--Escoge Uno--</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please provide a valid state.
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="zip">Colonia</label>
+                    <input type="text" class="form-control" id="zip" placeholder="" readonly value="Selecciona un codigo postal primero y selecciona el boton continuar">
+                    <div class="invalid-feedback">
+                        Zip code required.
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="Continuar" asp-route-id="@ViewBag.id" class="btn btn-outline-success" />
+        </form>
+    </div>
+</div>

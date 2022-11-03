@@ -1,0 +1,16 @@
+﻿@model PWDLog
+@{
+    ViewData["Title"] = "SetPWD";
+}
+
+<form asp-action="SetPWD" method="post">
+    <label>Ingrese contrase&ntilde;a:</label>
+    <input required asp-for="Pwd" />
+    <input type="submit" value="Comprobar" class="btn btn-outline-success"/>
+</form>
+@if (ViewBag.Data)
+{
+    <div>
+        <a class="btn btn-outline-success" download href="../Log.txt">Descargar</a>
+    </div>
+}

@@ -1,0 +1,167 @@
+﻿@model IEnumerable<ComponentesMexica.Data.Models.PCMR>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CPU)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Mobo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GPU)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PCU)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RAM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RAM1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RAM2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RAM3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cooler)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SSDM2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Almacenamiento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AlmacenamientoSecu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Case)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrecioVenta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrecioComision)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ganancia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Comision)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmployeeId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Published)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Active)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Imagen)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CPU)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Mobo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GPU)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PCU)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RAM)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RAM1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RAM2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RAM3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cooler)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SSDM2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Almacenamiento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AlmacenamientoSecu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Case)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrecioVenta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrecioComision)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ganancia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comision)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmployeeId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Published)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Active)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Imagen)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,91 @@
+﻿@model PCMR
+@{
+    ViewData["Title"] = Model.Nombre;
+}
+<style>
+    .imgs{
+        height:250px;
+        width: 250px;
+    }
+</style>
+<h1>Informaci&oacute;n</h1>
+<table class="table-responsive">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Componente</th>
+            <th scope="col">Marca</th>
+            <th scope="col">Modelo</th>
+            <th scope="col">Descripci&oacute;n</th>
+            <th scope="col">Extra</th>
+            <th scope="col">Imagen</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">CPU</th>
+            <td>@ViewBag.CPU.Marca</td>
+            <td>@ViewBag.CPU.Modelo</td>
+            <td>@ViewBag.CPU.Descripcion</td>
+            <td>Socket: @ViewBag.CPU.Socket</td>
+            <td><img src="~/UploadImages/@ViewBag.CPU.Imagen" class="imgs" /></td>
+        </tr>
+        <tr>
+            <th scope="row">GPU</th>
+            <td>@ViewBag.GPU.Marca</td>
+            <td>@ViewBag.GPU.Modelo</td>
+            <td>@ViewBag.GPU.Descripcion</td>
+            <td>Formato: @ViewBag.GPU.Formato</td>
+            <td><img src="~/UploadImages/@ViewBag.GPU.Imagen" class="imgs"/></td>
+        </tr>
+        <tr>
+            <th scope="row">Mother Board</th>
+            <td>@ViewBag.Mobo.Marca</td>
+            <td>@ViewBag.Mobo.Modelo</td>
+            <td>@ViewBag.Mobo.Descripcion</td>
+            <td>Formato: @ViewBag.Mobo.Formato</td>
+            <td><img src="~/UploadImages/@ViewBag.Mobo.Imagen" class="imgs"/></td>
+        </tr>
+        <tr>
+            <th scope="row">RAM</th>
+            <td>@ViewBag.RAM.Marca</td>
+            <td>@ViewBag.RAM.Modelo</td>
+            <td>@ViewBag.RAM.Descripcion</td>
+            <td>Capacidad: @ViewBag.RAM.Capacidad GB</td>
+            <td><img src="~/UploadImages/@ViewBag.RAM.Imagen" class="imgs"/></td>
+        </tr>
+        <tr>
+            <th scope="row">Fuente de poder</th>
+            <td>@ViewBag.PSU.Marca</td>
+            <td>@ViewBag.PSU.Modelo</td>
+            <td>@ViewBag.PSU.Descripcion</td>
+            <td>Wattage: @ViewBag.PSU.Wattage W</td>
+            <td><img src="~/UploadImages/@ViewBag.PSU.Imagen" class="imgs"/></td>
+        </tr>
+        <tr>
+            <th scope="row">Almacenamiento</th>
+            <td>@ViewBag.HDD.Marca</td>
+            <td>@ViewBag.HDD.Modelo</td>
+            <td>@ViewBag.HDD.Descripcion</td>
+            <td>Capacidad: @ViewBag.HDD.Capacidad GB</td>
+            <td><img src="~/UploadImages/@ViewBag.HDD.Imagen" class="imgs"/></td>
+        </tr>
+        <tr>
+            <th scope="row">Almacenamiento Secundario</th>
+            <td>@ViewBag.HDD2.Marca</td>
+            <td>@ViewBag.HDD2.Modelo</td>
+            <td>@ViewBag.HDD2.Descripcion</td>
+            <td>Capacidad: @ViewBag.HDD2.Capacidad GB</td>
+            <td><img src="~/UploadImages/@ViewBag.HDD2.Imagen" class="imgs" /></td>
+        </tr>
+        <tr>
+            <th scope="row">Gabinete</th>
+            <td>@ViewBag.Case.Marca</td>
+            <td>@ViewBag.Case.Modelo</td>
+            <td>@ViewBag.Case.Descripcion</td>
+            <td>Formato: @ViewBag.Case.Formato</td>
+            <td><img src="~/UploadImages/@ViewBag.Case.Imagen" class="imgs"/></td>
+        </tr>
+    </tbody>
+</table>
+
